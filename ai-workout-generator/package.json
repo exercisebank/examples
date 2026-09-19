@@ -1,0 +1,19 @@
+{
+  "name": "exercisebank-ai-workout-generator",
+  "private": true,
+  "type": "module",
+  "description": "A workout generator: Claude picks real exercises from the ExerciseBank API and your server attaches the videos.",
+  "scripts": {
+    "generate": "node generate.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": { "node": ">=24" },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
