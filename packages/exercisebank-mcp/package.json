@@ -2,13 +2,38 @@
   "name": "exercisebank-mcp",
   "version": "0.1.0",
   "description": "Model Context Protocol server for the ExerciseBank API (exercisebank.net): search 1,492 filmed exercises by muscle, equipment, movement pattern, difficulty and joints to avoid; get substitutes with reasons.",
-  "keywords": ["mcp", "model-context-protocol", "mcp-server", "exercisebank", "exercise api", "exercise video api", "fitness api", "workout", "claude"],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "exercisebank",
+    "exercise api",
+    "exercise video api",
+    "fitness api",
+    "workout",
+    "claude"
+  ],
   "homepage": "https://exercisebank.net",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exercisebank/examples.git",
+    "directory": "packages/exercisebank-mcp"
+  },
+  "bugs": "https://github.com/exercisebank/examples/issues",
+  "mcpName": "io.github.exercisebank/exercisebank-mcp",
   "license": "MIT",
   "type": "module",
-  "bin": { "exercisebank-mcp": "dist/index.js" },
-  "files": ["dist", "README.md", "LICENSE"],
-  "engines": { "node": ">=18" },
+  "bin": {
+    "exercisebank-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json && chmod +x dist/index.js",
     "typecheck": "tsc -p tsconfig.json --noEmit",

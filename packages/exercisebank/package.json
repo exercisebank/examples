@@ -2,16 +2,43 @@
   "name": "exercisebank",
   "version": "0.1.0",
   "description": "Official client for the ExerciseBank API (exercisebank.net): an exercise video API with 1,492 filmed exercises, joint filters, substitutes and signed media. Server-side only.",
-  "keywords": ["exercisebank", "exercise api", "exercise video api", "fitness api", "workout api", "exercise database", "workout videos", "fitness", "ai-fitness"],
+  "keywords": [
+    "exercisebank",
+    "exercise api",
+    "exercise video api",
+    "fitness api",
+    "workout api",
+    "exercise database",
+    "workout videos",
+    "fitness",
+    "ai-fitness"
+  ],
   "homepage": "https://exercisebank.net",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exercisebank/examples.git",
+    "directory": "packages/exercisebank"
+  },
+  "bugs": "https://github.com/exercisebank/examples/issues",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
-  "files": ["dist", "README.md", "LICENSE"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "sideEffects": false,
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
