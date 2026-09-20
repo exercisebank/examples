@@ -19,7 +19,7 @@ try {
 }
 const END_USER = process.env.EB_END_USER?.trim();
 
-const server = new McpServer({ name: "exercisebank", version: "0.1.0" });
+const server = new McpServer({ name: "exercisebank", version: "0.1.1" });
 
 const text = (value: unknown) => ({ content: [{ type: "text" as const, text: JSON.stringify(value) }] });
 const guard = <A>(run: (args: A) => Promise<unknown>) => async (args: A) => {

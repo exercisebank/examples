@@ -1,6 +1,6 @@
 {
   "name": "exercisebank-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Model Context Protocol server for the ExerciseBank API (exercisebank.net): search 1,492 filmed exercises by muscle, equipment, movement pattern, difficulty and joints to avoid; get substitutes with reasons.",
   "keywords": [
     "mcp",
@@ -20,7 +20,7 @@
     "directory": "packages/exercisebank-mcp"
   },
   "bugs": "https://github.com/exercisebank/examples/issues",
-  "mcpName": "io.github.exercisebank/exercisebank-mcp",
+  "mcpName": "net.exercisebank/exercisebank-mcp",
   "license": "MIT",
   "type": "module",
   "bin": {
