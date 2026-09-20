@@ -10,6 +10,8 @@ This repository is working code for it.
 
 | Folder | What it shows |
 |---|---|
+| [`packages/exercisebank/`](packages/exercisebank) | The official JS/TS client, on npm as [`exercisebank`](https://www.npmjs.com/package/exercisebank): search, detail, substitutes, signed media, catalogue sync |
+| [`packages/exercisebank-mcp/`](packages/exercisebank-mcp) | An MCP server, on npm as [`exercisebank-mcp`](https://www.npmjs.com/package/exercisebank-mcp): Claude, Cursor and other agents search the catalogue directly |
 | [`node/`](node) | Search, substitutes and signed media in 25 lines, no dependencies; a daily catalogue sync with ETag |
 | [`python/`](python) | The same as a small `requests` client |
 | [`ai-workout-generator/`](ai-workout-generator) | Claude builds a workout from real exercises through tool calls; your server attaches the videos |

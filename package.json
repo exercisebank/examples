@@ -1,0 +1,10 @@
+{
+  "name": "exercisebank-examples",
+  "private": true,
+  "description": "Examples, the official JS/TS client and the MCP server for the ExerciseBank API (https://exercisebank.net).",
+  "workspaces": ["packages/exercisebank", "packages/exercisebank-mcp"],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "exercisebank",
+  "version": "0.1.0",
+  "description": "Official client for the ExerciseBank API (exercisebank.net): an exercise video API with 1,492 filmed exercises, joint filters, substitutes and signed media. Server-side only.",
+  "keywords": ["exercisebank", "exercise api", "exercise video api", "fitness api", "workout api", "exercise database", "workout videos", "fitness", "ai-fitness"],
+  "homepage": "https://exercisebank.net",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
