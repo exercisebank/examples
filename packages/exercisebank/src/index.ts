@@ -22,6 +22,8 @@ export interface Exercise {
   loadedJoints: string[];
   impact: "low" | "moderate" | "high";
   unilateral: boolean;
+  /** Who demonstrates the clip. */
+  demonstrator?: "female" | "male";
   cues: string[];
   cuesFr?: string[];
   aliases?: string[];
@@ -44,6 +46,8 @@ export interface SearchParams {
   excludeJoints?: string[];
   impact?: ("low" | "moderate" | "high")[];
   unilateral?: boolean;
+  /** Who demonstrates the clip. */
+  demonstrator?: ("female" | "male")[];
   /** Restrict to these ids. */
   ids?: string[];
   /** Default 25, at most 100. */

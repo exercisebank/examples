@@ -51,7 +51,7 @@ for (const [id, m] of Object.entries(media)) console.log(id, m.signed ? m.mp4 : 
 
 | Method | Returns |
 |---|---|
-| `search(params)` | `{ data: Exercise[], total, next, … }`. Filters: `q`, `muscle`, `equipment` (the gear the person has), `pattern`, `minDifficulty`, `maxDifficulty`, `excludeJoints`, `impact`, `unilateral`, `ids`, `limit`, `offset` |
+| `search(params)` | `{ data: Exercise[], total, next, … }`. Filters: `q`, `muscle`, `equipment` (the gear the person has), `pattern`, `minDifficulty`, `maxDifficulty`, `excludeJoints`, `impact`, `unilateral`, `demonstrator`, `ids`, `limit`, `offset` |
 | `get(id)` | One `Exercise` |
 | `substitutes(id, { equipment, excludeJoints, limit })` | `Substitute[]`: `{ score, reason, exercise }`, best first |
 | `mediaUrls({ endUser, ids, coach, kinds, ttl })` | `{ data: { [id]: { signed, expires, mp4, still } }, missing }` |

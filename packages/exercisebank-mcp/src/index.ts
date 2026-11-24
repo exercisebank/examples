@@ -35,7 +35,7 @@ const guard = <A>(run: (args: A) => Promise<unknown>) => async (args: A) => {
 const brief = (e: Exercise) => ({
   id: e.id, name: e.name, ...(e.nameFr ? { nameFr: e.nameFr } : {}),
   primaryMuscles: e.primaryMuscles, secondaryMuscles: e.secondaryMuscles, equipment: e.equipment,
-  movementPattern: e.movementPattern, difficulty: e.difficulty, loadedJoints: e.loadedJoints, impact: e.impact, unilateral: e.unilateral,
+  movementPattern: e.movementPattern, difficulty: e.difficulty, loadedJoints: e.loadedJoints, impact: e.impact, unilateral: e.unilateral, ...(e.demonstrator ? { demonstrator: e.demonstrator } : {}),
 });
 
 const names = (what: string) => z.array(z.string()).optional().describe(`${what}. Values from get_vocabulary.`);
@@ -69,6 +69,7 @@ server.registerTool(
       excludeJoints: names("Leave out anything that loads these joints, e.g. a sore knee"),
       impact: z.array(z.enum(["low", "moderate", "high"])).optional(),
       unilateral: z.boolean().optional(),
+      demonstrator: z.array(z.enum(["female", "male"])).optional().describe("Who demonstrates the clip"),
       limit: z.number().int().min(1).max(100).optional().describe("Default 25"),
       offset: z.number().int().min(0).optional(),
     },

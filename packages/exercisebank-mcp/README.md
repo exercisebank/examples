@@ -40,7 +40,7 @@ It runs on your machine over stdio; the key stays in your client's configuration
 | Tool | What it does |
 |---|---|
 | `get_vocabulary` | The exact filter values: muscles, equipment, movement patterns, joints, impact; the catalogue version; the ids a sandbox key gets video for |
-| `search_exercises` | Search and filter: `q`, `muscle`, `equipment` (the gear the person has), `pattern`, `minDifficulty`, `maxDifficulty`, `excludeJoints`, `impact`, `unilateral`, `limit`, `offset` |
+| `search_exercises` | Search and filter: `q`, `muscle`, `equipment` (the gear the person has), `pattern`, `minDifficulty`, `maxDifficulty`, `excludeJoints`, `impact`, `unilateral`, `demonstrator`, `limit`, `offset` |
 | `get_exercise` | The full record: description, coaching cues, French, classification |
 | `get_substitutes` | Ranked replacements with a score and a reason each, filtered by gear and joints to avoid |
 | `get_media_urls` | Signed video and still URLs. Only when `EB_END_USER` is set (below) |
